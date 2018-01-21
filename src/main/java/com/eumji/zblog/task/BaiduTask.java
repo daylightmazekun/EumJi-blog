@@ -74,7 +74,6 @@ public class BaiduTask {
      */
     private void writerUrl(HttpURLConnection conn,String... ids) throws IOException {
         PrintWriter out=null;
-        BufferedReader bf = null;
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < ids.length; i++){
             sb.append(BASE_URL+"/article/details/"+ids[i]+"\n");
